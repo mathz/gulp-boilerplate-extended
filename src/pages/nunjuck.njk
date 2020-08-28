@@ -1,0 +1,22 @@
+<!-- index.nunjucks -->
+{% extends "layout.njk" %}
+{% block content %}
+  <h1>This is the nunjuck page</h1>
+<!-- Importing Nunjucks Macro -->
+{% import 'macros/nav-macro.njk' as nav %}
+{{nav.active('about')}}
+<br/>
+
+{% include "partials/static-navigation.njk" %}
+<br/>
+Data from nunjuck.json:
+<div class="datalist">
+  <!-- Loops through "images" array -->
+  {% for row in rows %}
+  <div>
+    <div>{{row.col1}}</div><div>{{row.col2}}</div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

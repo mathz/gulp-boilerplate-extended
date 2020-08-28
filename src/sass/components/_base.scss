@@ -1,0 +1,36 @@
+/**
+ * @section Base Styles
+ */
+
+body {
+	font-size: 120%;
+	margin: 0 auto;
+	max-width: 42em;
+	width: 88%;
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+}
+
+nav {
+	a {
+		&.active {
+			color:red;
+		}
+	}
+}
+
+.datalist {
+	> div {
+		div {
+			display:inline;
+			padding:5px;
+			border:1px black solid;
+		}
+		padding:5px;
+	}
+}
