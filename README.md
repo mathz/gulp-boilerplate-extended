@@ -9,6 +9,7 @@ The major part of the code is still his, but my needs are in some regards quite 
 - HTML Templating with nunjucks (file extension .njk is used). Pages, Templates, Macros and Partials and data-loading are all supported.
 - Styles injection
 - Strip debug used on javascript (strips console, alert, and debugger)
+- Compress JPGs,GIFs and PNGs
 
 **Features (base by cferdinadi)**
 - Concatenate, minify, and lint JavaScript.
